@@ -1,14 +1,12 @@
 import React, { Component } from 'react';
-import banner from '../images/starrynight.png';
+import '../static/css/header.css';
 
-export default class Header extends Component {
+export default class Header extends React.Component {
   render() {
     return (
-      <div className="row">
-        <div className="banner">
-            <img src={banner} width="100%" height={300}/>
-        </div>
-      </div>
+    	<div className="header">
+    		<h1 className="title">Art Gallery</h1>
+		</div>
     );
   }
 }
