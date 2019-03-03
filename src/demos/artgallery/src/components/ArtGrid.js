@@ -6,49 +6,49 @@ import GridListTile from '@material-ui/core/GridListTile';
 
   const tileData = [
     {
-      img: '/static/img/bats.jpg',
+      img: 'static/img/bats.jpg',
       title: 'Image',
       author: 'author',
       cols: 1,
     },
     {
-      img: '/static/img/facespikes.jpg',
+      img: 'static/img/facespikes.jpg',
       title: 'Image',
       author: 'author',
       cols: 2,
     },
     {
-      img: '/static/img/omg.jpg',
+      img: 'static/img/omg.jpg',
       title: 'Image',
       author: 'author',
       cols: 2,
     },
     {
-      img: '/static/img/kindergarten.jpg',
+      img: 'static/img/kindergarten.jpg',
       title: 'Image',
       author: 'author',
       cols: 1,
     },
     {
-      img: '/static/img/mayan.jpg',
+      img: 'static/img/mayan.jpg',
       title: 'Image',
       author: 'author',
       cols: 1,
     },
     {
-      img: '/static/img/washington.jpg',
+      img: 'static/img/washington.jpg',
       title: 'Image',
       author: 'author',
       cols: 2,
     },
     {
-      img: '/static/img/thanos.jpg',
+      img: 'static/img/thanos.jpg',
       title: 'Image',
       author: 'author',
       cols: 2,
     },
     {
-      img: '/static/img/monkey.jpg',
+      img: 'static/img/monkey.jpg',
       title: 'Image',
       author: 'author',
       cols: 1,
@@ -68,7 +68,7 @@ const styles = theme => ({
     height: 'auto',
   },
 });
- 
+
 class ImageGridList extends React.Component {
   render() {
     const { classes } = this.props;

@@ -51,7 +51,7 @@ class Server:
         #make_archive("./test_data_1", f"./zips/{self.name}.zip")
  
         if port == "7000":
-            make_archive("test_data", self.name) #have to make distinction
+            make_archive("artgallery", self.name) #have to make distinction
         else:
             make_archive("test_data_2", self.name) #have to make distinction
         #if port == 8080:
