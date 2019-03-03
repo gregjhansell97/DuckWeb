@@ -14,25 +14,17 @@ signal.signal(signal.SIGINT, signal.SIG_DFL)
 
 def make_archive(source, destination):
     shutil.make_archive(destination, "zip", source)
-    return 
-    z = zipfile.ZipFile(destination, 'w') 
-    for folder, subfolders, files in os.walk(source):
-        for f in files:
-            f_dir = os.path.join(folder, f)
-            z.write(
-                 f_dir, 
-                 os.path.relpath(os.path.join(folder, f), 'test_data_1'), 
-                 compress_type = zipfile.ZIP_DEFLATED)
-    z.close()
+    return
 
 class Server:
     '''
     '''
-    def __init__(self, port, ip, peers=set()):
+    def __init__(self, port, ip, public_name, peers=set()):
         self.ip = ip
         self.port = port
         self.url = f"{self.ip}:{self.port}"
         self.name = self.url.replace(".", "_").replace(":", "-")
+        self.public_name = public_name
         with open("redirect.html", "r") as f:
             self.redirect_text_unformatted = f.read()
 
@@ -50,11 +42,13 @@ class Server:
         #                compress_type = zipfile.ZIP_DEFLATED)
         #make_archive("./test_data_1", f"./zips/{self.name}.zip")
  
-        if port == "7000":
-            make_archive("artgallery", self.name) #have to make distinction
-        else:
-            make_archive("test_data_2", self.name) #have to make distinction
-        #if port == 8080:
+        make_archive(self.public_name, self.name)
+
+        # if port == "7000":
+        #     make_archive("test_data", self.name) #have to make distinction
+        # else:
+        #     make_archive("test_data_2", self.name) #have to make distinction
+        # #if port == 8080:
         #with open(f"test_data_1") as d:
         #    shutil.make_archive(f"zips/{self.name}", "zip", "test_data_1")
         #else:
