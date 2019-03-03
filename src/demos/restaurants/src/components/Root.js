@@ -24,22 +24,22 @@ class Root extends React.Component {
                 ],
                 images:[
                     {
-                        img:'/static/img/kikesmenu.jpg',
+                        img:'static/img/kikesmenu.jpg',
                         title:'Kikes menu',
                         cols:1
                     },
                     {
-                        img:'/static/img/kikesoutside.jpg',
+                        img:'static/img/kikesoutside.jpg',
                         title:'Outside Kikes Tacos',
                         cols:1
                     },
                     {
-                        img:'/static/img/kikesplate.jpg',
+                        img:'static/img/kikesplate.jpg',
                         title:'Plate of food',
                         cols:1
                     },
                     {
-                        img:'/static/img/kiketaco.jpg',
+                        img:'static/img/kiketaco.jpg',
                         title:'Taco',
                         cols:1
                     },
@@ -70,22 +70,22 @@ class Root extends React.Component {
                 ],
                 images:[
                 {
-                    img:'/static/img/burritobowl.jpg',
+                    img:'static/img/burritobowl.jpg',
                     title:'Burrito Bowl',
                     cols:1
                 },
                 {
-                    img:'/static/img/chipotleoutside.jpg',
+                    img:'static/img/chipotleoutside.jpg',
                     title:'Chipotle Outside',
                     cols:1
                 },
                 {
-                    img:'/static/img/chipotleinside.jpg',
+                    img:'static/img/chipotleinside.jpg',
                     title:'Chipotle Inside',
                     cols:2
                 },
                 {
-                    img:'/static/img/chipotlefood.jpg',
+                    img:'static/img/chipotlefood.jpg',
                     title:'Chipotle food assortment',
                     cols:1
                 }],
@@ -115,22 +115,22 @@ class Root extends React.Component {
                 ],
                 images:[
                 {
-                    img:'/static/img/steakplates.jpg',
+                    img:'static/img/steakplates.jpg',
                     title:'Plates of steak',
                     cols:2
                 },
                 {
-                    img:'/static/img/steak.jpg',
+                    img:'static/img/steak.jpg',
                     title:'Steak',
                     cols:1
                 },
                 {
-                    img:'/static/img/outsideruths.jpg',
+                    img:'static/img/outsideruths.jpg',
                     title:"Outside Ruth's Chris",
                     cols:1
                 },
                 {
-                    img:'/static/img/ruthsinside.jpg',
+                    img:'static/img/ruthsinside.jpg',
                     title:'Inside the Steakhouse',
                     cols:2
                 }],
@@ -162,22 +162,22 @@ class Root extends React.Component {
                 ],
                 images:[
                 {
-                    img:'/static/img/panerafood.jpg',
+                    img:'static/img/panerafood.jpg',
                     title:'Plates of steak',
                     cols:1
                 },
                 {
-                    img:'/static/img/panerabakery.jpg',
+                    img:'static/img/panerabakery.jpg',
                     title:'Bakery',
                     cols:2
                 },
                 {
-                    img:'/static/img/morepanera.jpg',
+                    img:'static/img/morepanera.jpg',
                     title:"Food",
                     cols:2
                 },
                 {
-                    img:'/static/img/outsidepanera.jpg',
+                    img:'static/img/outsidepanera.jpg',
                     title:'Outside Panera',
                     cols:1
                 }],

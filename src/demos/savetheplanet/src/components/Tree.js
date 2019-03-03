@@ -19,7 +19,7 @@ function Tree(props) {
 
   return (
     <div className="classes.root">
-    		<img src={"/static/img/tree-"+age+".jpg"}></img>
+    		<img src={"static/img/tree-"+age+".jpg"}></img>
 		</div>
   );
 }

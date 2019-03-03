@@ -19,6 +19,7 @@ function SimpleAppBar(props) {
 
   return (
     <div className="header">
+            <img className='' src='static/img/green.jpg'></img>
     		<h1 className="title">{name}</h1>
 		</div>
   );
