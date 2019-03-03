@@ -3,10 +3,9 @@ import PropTypes from "prop-types";
 import {withStyles} from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
-import Typography from "@material-ui/core/Typography"; 
 
 //local
-import Title from './Title.js';
+import RestGrid from "./RestGrid.js";
 
 const styles = {
   card: {
@@ -18,33 +17,18 @@ const styles = {
 
 class Restaurant extends React.Component {
     render() {
-        const { classes, name, description, phone, address, sociallinks, price } = this.props;
+        const { classes, name, description, phone, address, features, sociallinks, price, images, menu, coordinants, hours } = this.props;
         return (
-            <Card className={classes.card}>
+            <Card className={classes.card} className='restPanel'>
                 <CardContent>
-                    <Title name={name}>
-                    </Title>
-                    <br />
-                    <Typography component="p">
-                        {description}
-                    </Typography>
                     
-                    <Typography component="p">
-                        {phone}
-                    </Typography>
-                    <Typography component="p">
-                        {address}
-                    </Typography>
-                    <Typography component="p">
-                        {price}
-                    </Typography>
-                    {/* {sociallinks.map((s) =>
-                        <Typography component="p">
-                            {s}
-                        </Typography>
-                    )
-                    } */}
-
+                    <RestGrid name={name} description={description} 
+                        phone={phone} address={address} 
+                        features={features} price={price} 
+                        sociallinks={sociallinks} coordinants={coordinants} menu={menu}
+                        images={images} hours={hours}
+                        ></RestGrid>
+                    <br />
                 </CardContent>
             </Card>
         );
