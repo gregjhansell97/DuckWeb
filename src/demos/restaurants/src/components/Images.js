@@ -20,8 +20,9 @@ const styles = theme => ({
     },
     gridList: {
         maxWidth:800,
-        height: 330
-    },
+        height: 330,
+        margin:'auto !important'
+    }
 });
 
 

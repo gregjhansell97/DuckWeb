@@ -8,14 +8,14 @@ import Restaurant from './Restaurant';
 class Root extends React.Component {
     render() {
         let restaurants = [
-            {name:"Keke's Tacos", 
+            {name:"Kike's Tacos", 
                 description:'Taco food truck', 
                 address:'246 Main St. Charlottesville VA, 20193', 
                 phone:'3013405432',
                 features:['Cheap','Free Wifi','Good Atmosphere','Mexican','Food Truck','One dollar tacos'],
                 price:1,
                 coordinants:'76.12334, 12.12345',
-                sociallinks:['instagram.com/kekes','facebook.com/kekes'],
+                sociallinks:['instagram.com/kikes','facebook.com/kikes'],
                 menu:[
                     {item:'Taco',price:1.00},
                     {item:'Burrito',price:4.00},
@@ -24,10 +24,26 @@ class Root extends React.Component {
                 ],
                 images:[
                     {
-                        img:'/static/img/burritobowl.jpg',
-                        title:'Burrito Bowl',
+                        img:'/static/img/kikesmenu.jpg',
+                        title:'Kikes menu',
                         cols:1
-                    }],
+                    },
+                    {
+                        img:'/static/img/kikesoutside.jpg',
+                        title:'Outside Kikes Tacos',
+                        cols:1
+                    },
+                    {
+                        img:'/static/img/kikesplate.jpg',
+                        title:'Plate of food',
+                        cols:1
+                    },
+                    {
+                        img:'/static/img/kiketaco.jpg',
+                        title:'Taco',
+                        cols:1
+                    },
+                    ],
                     hours:[
                         {day:'Monday',hours:'CLOSED'},
                         {day:'Tuesday',hours:'CLOSED'},
@@ -67,6 +83,11 @@ class Root extends React.Component {
                     img:'/static/img/chipotleinside.jpg',
                     title:'Chipotle Inside',
                     cols:2
+                },
+                {
+                    img:'/static/img/chipotlefood.jpg',
+                    title:'Chipotle food assortment',
+                    cols:1
                 }],
                 hours:[
                     {day:'Monday',hours:'5:00 PM - 9:00 PM'},

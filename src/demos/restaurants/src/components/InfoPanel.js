@@ -5,14 +5,12 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 
 //local
-import Title from './Title.js';
 import '../css/index.css';
 
 const styles = {
-    //   title: {
-    //     fontSize: 20,
-    //     fontWeight: 500
-    //   }
+      ListItem: {
+        fontFamily:"Arial"
+      }
 }
 
 
@@ -23,20 +21,20 @@ class InfoPanel extends React.Component {
 
             <div className={classes.root}>
                 <List>
-                    <ListItem>
+                    <ListItem class="infoItem">
                         {description}
                     </ListItem>
-                    <ListItem>
+                    <ListItem class="infoItem">
                         {address}
                     </ListItem>
-                    <ListItem>
+                    <ListItem class="infoItem">
                         {phone}
                     </ListItem>
-                    <ListItem>
+                    <ListItem class="infoItem">
                         {price}
                     </ListItem>
                     {sociallinks.map((r,index) =>
-                        <ListItem key={index} >
+                        <ListItem key={index} class="infoItem">
                         {r}
                         </ListItem>
                     )

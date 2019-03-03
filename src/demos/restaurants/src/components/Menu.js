@@ -39,7 +39,7 @@ class Menu extends React.Component {
                                 {row.item}
                             </TableCell>
                             <TableCell align="right">
-                                {row.price}
+                                ${row.price}
                             </TableCell>
                         </TableRow>
                         ))}

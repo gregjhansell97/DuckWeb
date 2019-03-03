@@ -28,6 +28,9 @@ const styles = theme => ({
         flexGrow: 1,
         backgroundColor: theme.palette.background.paper,
     },
+    AppBar:{
+        backgroundColor: "#af663e"
+    }
 });
 
 
@@ -43,8 +46,8 @@ class PageSwitch extends React.Component {
         const { value } = this.state;
         return (
             <div className={classes.root}>
-                <AppBar position="static">
-                    <Tabs value={value} onChange={this.handleChange}>
+                <AppBar  position="static" background-color="#af663e">
+                    <Tabs class="bg-brown" value={value} onChange={this.handleChange}>
                         <Tab label="Menu" />
                         <Tab label="Features" />
                         <Tab label="Images" />
