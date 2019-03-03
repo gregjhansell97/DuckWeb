@@ -18,22 +18,29 @@ const styles = {
 
 class InfoPanel extends React.Component {
     render() {
-        const { classes, name } = this.props;
+        const { classes, description, phone, address, sociallinks, price, coordinants  } = this.props;
         return (
 
-            // <Title name={name}>
-            // </Title>
             <div className={classes.root}>
                 <List>
                     <ListItem>
-                        256 Main St, CVille VA, 20154
+                        {description}
                     </ListItem>
                     <ListItem>
-                        302-516-5615
+                        {address}
                     </ListItem>
                     <ListItem>
-                        2.5 Miles Away
+                        {phone}
                     </ListItem>
+                    <ListItem>
+                        {price}
+                    </ListItem>
+                    {sociallinks.map((r,index) =>
+                        <ListItem key={index} >
+                        {r}
+                        </ListItem>
+                    )
+                    }
                 </List>
             </div>
         );

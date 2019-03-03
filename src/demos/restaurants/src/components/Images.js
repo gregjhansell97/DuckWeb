@@ -20,58 +20,19 @@ const styles = theme => ({
     },
     gridList: {
         maxWidth:800,
-        alignSelf: 'stretch',
         height: 330
     },
 });
 
-/*
- * The example data is structured as follows:
- *
- * import image from 'path/to/image.jpg';
- * [etc...]
- *
- * const tileData = [
- *   {
- *     img: image,
- *     title: 'Image',
- *     author: 'author',
- *     cols: 2,
- *   },
- *   {
- *     [etc...]
- *   },
- * ];
- */
-
-
-const imgData=[
-    {
-        img:'/static/img/burritobowl.jpg',
-        title:'Burrito Bowl',
-        cols:1
-    },
-    {
-        img:'/static/img/chipotleoutside.jpg',
-        title:'Chipotle Outside',
-        cols:1
-    },
-    {
-        img:'/static/img/chipotleinside.jpg',
-        title:'Chipotle Inside',
-        cols:2
-    }
- ];
-
 
 class Images extends React.Component {
     render() {
-        const { classes, name } = this.props;
+        const { classes, images } = this.props;
         return (
 
             <div className={classes.root}>
                 <GridList cellHeight={160} className={classes.gridList} cols={3}>
-                    {imgData.map(tile => (
+                    {images.map(tile => (
                         <GridListTile key={tile.img} cols={tile.cols || 1}>
                             <img src={tile.img} alt={tile.title} />
                         </GridListTile>

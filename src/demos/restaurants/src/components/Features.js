@@ -20,24 +20,17 @@ const styles = theme => ({
 
 class Features extends React.Component {
     render() {
-        const { classes, name } = this.props;
+        const { classes, features } = this.props;
         return (
 
             <div className={classes.root}>
                 <List>
-                    <ListItem>
-                        Fun Atmosphere
-                    </ListItem>
-                    <ListItem>
-                        Outdoor Seating
-                    </ListItem>
-                    <ListItem>
-                        Free Wifi
-                    </ListItem>
-                    <ListItem>
-                        Power Outlets
-                    </ListItem>
-                    
+                {features.map((r,index) =>
+                        <ListItem key={index} >
+                        {r}
+                        </ListItem>
+                    )
+                    }
                 </List>
             </div>
         );

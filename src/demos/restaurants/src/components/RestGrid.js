@@ -26,7 +26,7 @@ const styles = {
 
 class RestGrid extends React.Component {
     render() {
-        const { classes, name } = this.props;
+        const { classes, name, description, phone, address, features, sociallinks, price, images, menu, coordinants, hours } = this.props;
         return (
 
             // <Title name={name}>
@@ -37,10 +37,16 @@ class RestGrid extends React.Component {
                         <Title name={name}>
                         </Title>
                         <Divider/>
-                        <InfoPanel></InfoPanel>
+                        <InfoPanel description={description} 
+                        phone={phone} address={address} price={price} 
+                        sociallinks={sociallinks} coordinants={coordinants}
+                        ></InfoPanel>
                     </Grid>
                     <Grid item xs={9}>
-                        <PageSwitch></PageSwitch>
+                        <PageSwitch 
+                        images={images} hours={hours}
+                        menu={menu} features={features}
+                        ></PageSwitch>
                     </Grid>
 
                 </Grid>

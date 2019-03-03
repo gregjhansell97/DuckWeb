@@ -39,7 +39,7 @@ class PageSwitch extends React.Component {
         this.setState({ value });
     };
     render() {
-        const { classes, name } = this.props;
+        const { classes, images, hours, menu, features } = this.props;
         const { value } = this.state;
         return (
             <div className={classes.root}>
@@ -52,10 +52,10 @@ class PageSwitch extends React.Component {
                         
                     </Tabs>
                 </AppBar>
-                {value === 0 && <TabContainer><Menu></Menu></TabContainer>}
-                {value === 1 && <TabContainer><Features></Features></TabContainer>}
-                {value === 2 && <TabContainer><Images></Images></TabContainer>}
-                {value === 3 && <TabContainer><Hours></Hours></TabContainer>}
+                {value === 0 && <TabContainer><Menu menu={menu}></Menu></TabContainer>}
+                {value === 1 && <TabContainer><Features features={features}></Features></TabContainer>}
+                {value === 2 && <TabContainer><Images images={images}></Images></TabContainer>}
+                {value === 3 && <TabContainer><Hours hours={hours}></Hours></TabContainer>}
             </div>
         );
     }

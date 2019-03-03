@@ -18,22 +18,10 @@ const styles = theme => ({
     }
   });
 
-let id=0;
-function createData(item,price){
-id+=1;
-return {item,price};
-}
-const rows = [
-    createData('Taco', 1.00),
-    createData('Burrito', 4.00),
-    createData('Horchata', 2.00),
-    createData('Squirt', 1.00)
-  ];
-
 
 class Menu extends React.Component {
     render() {
-        const { classes, name } = this.props;
+        const { classes, menu } = this.props;
         return (
 
             <div className={classes.root}>
@@ -45,7 +33,7 @@ class Menu extends React.Component {
                         </TableRow>
                     </TableHead>
                     <TableBody>
-                        {rows.map(row=>(
+                        {menu.map(row=>(
                         <TableRow key={row.id}>
                             <TableCell component="th" scope="row">
                                 {row.item}

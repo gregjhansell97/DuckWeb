@@ -16,7 +16,27 @@ class Root extends React.Component {
                 price:1,
                 coordinants:'76.12334, 12.12345',
                 sociallinks:['instagram.com/kekes','facebook.com/kekes'],
-                menu:['Taco SAR','Horchata','Taco Pollo','Taco Carne','Taco Carnitas','Squirt']
+                menu:[
+                    {item:'Taco',price:1.00},
+                    {item:'Burrito',price:4.00},
+                    {item:'Horchata',price:2.50},
+                    {item:'Squirt',price:1.50}
+                ],
+                images:[
+                    {
+                        img:'/static/img/burritobowl.jpg',
+                        title:'Burrito Bowl',
+                        cols:1
+                    }],
+                    hours:[
+                        {day:'Monday',hours:'CLOSED'},
+                        {day:'Tuesday',hours:'CLOSED'},
+                        {day:'Wednesday',hours:'CLOSED'},
+                        {day:'Thursday',hours:'5:00 PM - 11:00 PM'},
+                        {day:'Friday',hours:'5:00 PM - 11:00 PM'},
+                        {day:'Saturday',hours:'5:00 PM - 11:00 PM'},
+                        {day:'Sunday',hours:'5:00 PM - 11:00 PM'}
+                    ]
             },
             {name:'Chipotle', 
                 description:'Fast food burritos', 
@@ -26,9 +46,40 @@ class Root extends React.Component {
                 price:2,
                 coordinants:'76.12334, 12.12345',
                 sociallinks:['instagram.com/chipotleCVille'],
-                menu:['Chicken Burrito','Chicken Burrito Bowl']
+                menu:[
+                    {item:'Taco',price:4.00},
+                    {item:'Burrito',price:7.00},
+                    {item:'Burrito Bowl',price:7.50},
+                    {item:'Guac',price:2.00}
+                ],
+                images:[
+                {
+                    img:'/static/img/burritobowl.jpg',
+                    title:'Burrito Bowl',
+                    cols:1
+                },
+                {
+                    img:'/static/img/chipotleoutside.jpg',
+                    title:'Chipotle Outside',
+                    cols:1
+                },
+                {
+                    img:'/static/img/chipotleinside.jpg',
+                    title:'Chipotle Inside',
+                    cols:2
+                }],
+                hours:[
+                    {day:'Monday',hours:'5:00 PM - 9:00 PM'},
+                    {day:'Tuesday',hours:'9:00 AM - 9:00 PM'},
+                    {day:'Wednesday',hours:'9:00 AM - 9:00 PM'},
+                    {day:'Thursday',hours:'9:00 AM - 9:00 PM'},
+                    {day:'Friday',hours:'9:00 AM - 9:00 PM'},
+                    {day:'Saturday',hours:'9:00 AM - 10:00 PM'},
+                    {day:'Sunday',hours:'9:00 AM - 5:00 PM'}
+                ]
             } 
         ];
+
         return (
             <div>
                 
@@ -37,7 +88,12 @@ class Root extends React.Component {
                 </div>
                 <div>
                     {restaurants.map((r,index) =>
-                        <Restaurant key={index} name={r.name} description={r.description} phone={r.phone} address={r.address} price={r.price} instagram={r.sociallinks}></Restaurant>
+                        <Restaurant key={index} name={r.name} description={r.description} 
+                        phone={r.phone} address={r.address} 
+                        features={r.features} price={r.price} 
+                        sociallinks={r.sociallinks} coordinants={r.coordinants} menu={r.menu}
+                        images={r.images} hours={r.hours}>
+                        </Restaurant>
                     )
                     }
                 </div>

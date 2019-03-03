@@ -18,33 +18,18 @@ const styles = {
 
 class Restaurant extends React.Component {
     render() {
-        const { classes, name, description, phone, address, sociallinks, price } = this.props;
+        const { classes, name, description, phone, address, features, sociallinks, price, images, menu, coordinants, hours } = this.props;
         return (
             <Card className={classes.card} className='restPanel'>
                 <CardContent>
                     
-                    <RestGrid name={name}></RestGrid>
+                    <RestGrid name={name} description={description} 
+                        phone={phone} address={address} 
+                        features={features} price={price} 
+                        sociallinks={sociallinks} coordinants={coordinants} menu={menu}
+                        images={images} hours={hours}
+                        ></RestGrid>
                     <br />
-                    {/* <Typography component="p">
-                        {description}
-                    </Typography>
-                    
-                    <Typography component="p">
-                        {phone}
-                    </Typography>
-                    <Typography component="p">
-                        {address}
-                    </Typography>
-                    <Typography component="p">
-                        {price}
-                    </Typography> */}
-                    {/* {sociallinks.map((s) =>
-                        <Typography component="p">
-                            {s}
-                        </Typography>
-                    )
-                    } */}
-
                 </CardContent>
             </Card>
         );

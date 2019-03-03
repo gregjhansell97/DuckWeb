@@ -18,25 +18,11 @@ const styles = theme => ({
     }
   });
 
-let id=0;
-function createData(day,hours){
-id+=1;
-return {day,hours};
-}
-const rows = [
-    createData('Monday', '9:00 AM - 9:00 PM'),
-    createData('Tuesday', '9:00 AM - 9:00 PM'),
-    createData('Wednesday', '9:00 AM - 9:00 PM'),
-    createData('Thursday', '9:00 AM - 9:00 PM'),
-    createData('Friday', '9:00 AM - 10:00 PM'),
-    createData('Saturday', '9:00 AM - 10:00 PM'),
-    createData('Sunday', '9:00 AM - 5:00 PM')
-  ];
 
 
 class Hours extends React.Component {
     render() {
-        const { classes, name } = this.props;
+        const { classes, hours } = this.props;
         return (
 
             <div className={classes.root}>
@@ -48,7 +34,7 @@ class Hours extends React.Component {
                         </TableRow>
                     </TableHead>
                     <TableBody>
-                        {rows.map(row=>(
+                        {hours.map(row=>(
                         <TableRow key={row.id}>
                             <TableCell component="th" scope="row">
                                 {row.day}
