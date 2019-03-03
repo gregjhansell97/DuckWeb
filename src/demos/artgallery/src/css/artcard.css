@@ -1,0 +1,23 @@
+.artcard {
+	width:23%;
+	display: inline-block;
+	margin: 1%;
+	position:relative;
+	height: 50vh;
+}
+.artcardpiccontainer {
+	height:40vh;
+	background-color:lightgray;
+}
+.artcardpic {
+	width:auto !important;
+	position:absolute;
+	left:50%;
+	top:calc(50% - 5vh);
+	transform: translate(-50%, -50%);
+	padding:0;
+	max-height: 40vh;
+	max-width: 100%;
+}
+.artcardcontent {
+}
