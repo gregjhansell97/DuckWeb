@@ -5,9 +5,8 @@ import Typography from "@material-ui/core/Typography";
 import '../css/index.css';
 
 const styles = {
-//   title: {
-//     fontSize: 20,
-//     fontWeight: 500
+//   Typography: {
+//     fontSize: 20
 //   }
 }
 

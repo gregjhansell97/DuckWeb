@@ -1,5 +1,5 @@
 .restTitle{
-    font-size: 25px !important;
+    font-size: 30px !important;
     display: inline-block !important;
     /* border: 1px solid black; */
     border-radius: 5px;
@@ -45,5 +45,15 @@ background: #af663e;
 
 .infoItem{
     font-family:Arial;
-    padding:2px;
+    padding:10px;
+}
+.sociallink{
+    text-decoration: none;
+    color:inherit;
+    padding:4px;
+    word-wrap:wrap;
+}
+.sociallink:hover{
+    background-color:lightgrey;
+    border-radius:3px;
 }
