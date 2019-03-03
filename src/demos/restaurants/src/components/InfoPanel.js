@@ -60,10 +60,6 @@ InfoPanel.propTypes = {
      */
     classes: PropTypes.object.isRequired,
 
-    /**
-     * name of the restaurant
-     */
-    name: PropTypes.string.isRequired,
 
 }
 
