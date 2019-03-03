@@ -1,0 +1,14 @@
+.restTitle{
+    font-size: 25px !important;
+    display: inline-block !important;
+    /* border: 1px solid black; */
+    border-radius: 5px;
+    padding:3px;
+}
+
+.restPanel{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding:3px;
+
+}

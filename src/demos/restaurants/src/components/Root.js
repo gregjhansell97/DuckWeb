@@ -8,7 +8,7 @@ import Restaurant from './Restaurant';
 class Root extends React.Component {
     render() {
         let restaurants = [
-            {name:'Kekes', 
+            {name:"Keke's Tacos", 
                 description:'Taco food truck', 
                 address:'246 Main St. Charlottesville VA, 20193', 
                 phone:'3013405432',
@@ -36,8 +36,8 @@ class Root extends React.Component {
                     <Banner name="Restaurants"></Banner>
                 </div>
                 <div>
-                    {restaurants.map((r) =>
-                        <Restaurant name={r.name} description={r.description} phone={r.phone} address={r.address} price={r.price} instagram={r.sociallinks}></Restaurant>
+                    {restaurants.map((r,index) =>
+                        <Restaurant key={index} name={r.name} description={r.description} phone={r.phone} address={r.address} price={r.price} instagram={r.sociallinks}></Restaurant>
                     )
                     }
                 </div>

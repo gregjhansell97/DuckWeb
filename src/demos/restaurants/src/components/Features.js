@@ -5,42 +5,46 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 
 //local
-import Title from './Title.js';
 import '../css/index.css';
 
-const styles = {
-    //   title: {
-    //     fontSize: 20,
-    //     fontWeight: 500
-    //   }
-}
+const styles = theme => ({
+    // root: {
+    //   width: '100%',
+    //   maxWidth: 360,
+    //   backgroundColor: theme.palette.background.paper,
+    // },
+  });
 
 
-class InfoPanel extends React.Component {
+
+
+class Features extends React.Component {
     render() {
         const { classes, name } = this.props;
         return (
 
-            // <Title name={name}>
-            // </Title>
             <div className={classes.root}>
                 <List>
                     <ListItem>
-                        256 Main St, CVille VA, 20154
+                        Fun Atmosphere
                     </ListItem>
                     <ListItem>
-                        302-516-5615
+                        Outdoor Seating
                     </ListItem>
                     <ListItem>
-                        2.5 Miles Away
+                        Free Wifi
                     </ListItem>
+                    <ListItem>
+                        Power Outlets
+                    </ListItem>
+                    
                 </List>
             </div>
         );
     }
 }
 
-InfoPanel.propTypes = {
+Features.propTypes = {
     /**
      * styling information for the class
      */
@@ -53,4 +57,4 @@ InfoPanel.propTypes = {
 
 }
 
-export default withStyles(styles)(InfoPanel);
+export default withStyles(styles)(Features);

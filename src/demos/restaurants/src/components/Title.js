@@ -4,12 +4,13 @@ import {withStyles} from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography"; 
+import '../static/css/index.css';
 
 const styles = {
-  title: {
-    fontSize: 20,
-    fontWeight: 500
-  }
+//   title: {
+//     fontSize: 20,
+//     fontWeight: 500
+//   }
 }
 
 
@@ -17,7 +18,7 @@ class Title extends React.Component {
     render() {
         const { classes, name } = this.props;
         return (
-            <Typography className={classes.title} color="textSecondary">
+            <Typography className="restTitle" color="textSecondary">
                         {name}
                     </Typography>
         );

@@ -6,7 +6,7 @@ import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography"; 
 
 //local
-import Title from './Title.js';
+import RestGrid from "./RestGrid.js";
 
 const styles = {
   card: {
@@ -20,12 +20,12 @@ class Restaurant extends React.Component {
     render() {
         const { classes, name, description, phone, address, sociallinks, price } = this.props;
         return (
-            <Card className={classes.card}>
+            <Card className={classes.card} className='restPanel'>
                 <CardContent>
-                    <Title name={name}>
-                    </Title>
+                    
+                    <RestGrid name={name}></RestGrid>
                     <br />
-                    <Typography component="p">
+                    {/* <Typography component="p">
                         {description}
                     </Typography>
                     
@@ -37,7 +37,7 @@ class Restaurant extends React.Component {
                     </Typography>
                     <Typography component="p">
                         {price}
-                    </Typography>
+                    </Typography> */}
                     {/* {sociallinks.map((s) =>
                         <Typography component="p">
                             {s}
