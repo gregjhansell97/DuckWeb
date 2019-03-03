@@ -7,12 +7,14 @@ import shutil
 
 def run():
     parser = argparse.ArgumentParser(description="runs a duckweb server")
+    parser.add_argument("--ip", help="ip of server")
     parser.add_argument("--port", help="port of server")
     parser.add_argument("--public_name", help="Domain name of the server, and the folder it will appear to serve")
     parser.add_argument("--peers", help="list of ip:port peers", nargs="+")
     
     args = parser.parse_args()
     port = args.port
+    ip = args.ip
     public_name = args.public_name
     peers = args.peers if args.peers else []
 
@@ -25,6 +27,6 @@ def run():
     #    zip_ref.extractall("meh")
     
     print("starting server")
-    s = Server(port, "127.0.0.1", public_name, set(peers))
+    s = Server(port, ip, public_name, set(peers))
     s.run()
 

@@ -93,9 +93,9 @@ class Server:
                     files = {"name": self.name, "file": f}
                     async with session.post(post_url, data=files) as response:
                         try:
-                            with open(f"zips/{p.replace(".", "_").replace(":", "-")}.zip", "xb") as f:
+                            with open(f"zips/{p.replace('.', '_').replace(':', '-')}.zip", "xb") as f:
                                 f.write(await response.read())
-                        except
+                        except:
                             print("here?")
 
     async def on_exchange_data(self, request):
