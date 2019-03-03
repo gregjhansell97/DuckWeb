@@ -1,0 +1,10 @@
+.tilegallery {
+	background-color: lightblue;
+}
+.tiles {
+	width: 30vw;
+	height:28vw;
+	margin-left:2.2vw;
+	margin-top:10vh;
+	margin-bottom:10vh;
+}

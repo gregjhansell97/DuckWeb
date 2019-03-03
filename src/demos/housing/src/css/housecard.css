@@ -1,0 +1,27 @@
+.housecard {
+	width:31.3%;
+	display: inline-block;
+	margin: 1%;
+	position:relative;
+	height: 70vh;
+}
+.housecardpiccontainer {
+	height:60vh;
+	background-color:lightgray;
+}
+.housecardpic {
+	width:auto !important;
+	position:absolute;
+	left:50%;
+	top:calc(50% - 5vh);
+	transform: translate(-50%, -50%);
+	padding:0;
+	max-height: 60vh;
+	max-width: 100%;
+}
+.housecardtitle{
+	text-align: left;
+}
+.housecardestimate {
+	text-align: left;
+}

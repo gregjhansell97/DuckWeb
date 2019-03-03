@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+h2 {
+	font-family: 'Josefin Sans', sans-serif;
+	text-align:center;
+	font-size: 25pt;
+	margin-bottom: 5px;
+}
+h3 {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 10vw;
+	width: 40%;
+	margin-left:10vw;
+	display: inline-block;
+}
+h4 {
+	font-family: 'Josefin Sans', sans-serif;
+	text-align:center;
+	font-size: 40pt;
+	padding: 3vw;
+	background-color: #3473d8;
+	color:white;
+	margin-top:0;
+	margin-bottom:0;
+}
+p {
+	font-family: 'Josefin Sans', sans-serif;
+	color:gray;
+	width:70%;
+	text-align:center;
+	margin-left:15%;
+}
+span {
+	font-family: 'Josefin Sans', sans-serif;
+	color:gray;
+	width:40%;
+	display:inline-block;
+	margin-top:10vh;
+}
+.textunderline {
+	width: 14%;
+	margin-left:43%;
+}
+.cardsbackground {
+	background-color: lightblue;
+}
