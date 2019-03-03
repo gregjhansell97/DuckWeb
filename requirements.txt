@@ -1,0 +1,9 @@
+aiohttp==3.5.4
+aiohttp-cors==0.7.0
+async-timeout==3.0.1
+attrs==18.2.0
+chardet==3.0.4
+-e git+https://github.com/gregjhansell97/DuckWeb.git@c3a18d72e8629d790b4b63b2136f80f8cc368492#egg=duck_web
+idna==2.8
+multidict==4.5.2
+yarl==1.3.0
