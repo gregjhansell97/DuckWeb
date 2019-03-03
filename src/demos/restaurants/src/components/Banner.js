@@ -9,23 +9,24 @@ import '../css/index.css';
 
 
 const styles = {
-  root: {
-    flexGrow: 1,
-  }
+    root: {
+        flexGrow: 1,
+    }
 };
 
 function SimpleAppBar(props) {
-  const { classes, name } = props;
+    const { classes, name } = props;
 
-  return (
-    <div className="header">
-    		<h1 className="title">Restaurants</h1>
-		</div>
-  );
+    return (
+        <div className="header">
+            <img src='static/img/food.jpg'></img>
+            <h1 className="title">Restaurants</h1>
+        </div>
+    );
 }
 
 SimpleAppBar.propTypes = {
-  classes: PropTypes.object.isRequired,
+    classes: PropTypes.object.isRequired,
 };
 
 export default withStyles(styles)(SimpleAppBar);
